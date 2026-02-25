@@ -1,0 +1,9 @@
+int AnnualTrainingFee = int.Parse(Console.ReadLine());
+
+double PriceOfBasketballSneakers = AnnualTrainingFee * 0.60;
+double PriceOfABasketballUniform = PriceOfBasketballSneakers * 0.80;
+double priceOfABasketballBall = PriceOfABasketballUniform / 4;
+double PriceOfBasketballAccessories = priceOfABasketballBall / 5;
+double TotalPriceForTheEquipment = PriceOfBasketballSneakers + PriceOfABasketballUniform 
+                                  + priceOfABasketballBall + PriceOfBasketballAccessories + AnnualTrainingFee;
+Console.WriteLine(TotalPriceForTheEquipment);
