@@ -1,0 +1,6 @@
+int pages = int.Parse(Console.ReadLine());
+int For1H = int.Parse(Console.ReadLine());
+int days = int.Parse(Console.ReadLine());
+int time = pages / For1H;
+int totalTime = time / days;
+Console.WriteLine(totalTime);
