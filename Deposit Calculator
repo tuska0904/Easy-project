@@ -1,0 +1,6 @@
+double deposit = double.Parse(Console.ReadLine());
+int months = int.Parse(Console.ReadLine());
+double annualInterestRate = double.Parse(Console.ReadLine());
+double interest = (deposit * (annualInterestRate / 100)) / 12;
+double totalSum = deposit + months * interest;
+Console.WriteLine(totalSum);
