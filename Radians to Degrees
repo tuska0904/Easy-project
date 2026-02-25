@@ -1,0 +1,3 @@
+double radians = double.Parse(Console.ReadLine());
+double regrees = radians * 180 / Math.PI;
+Console.WriteLine(regrees);
