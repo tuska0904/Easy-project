@@ -1,0 +1,13 @@
+double PackageOfChemicals = 5.80;
+double PackOfMarkers = 7.20;
+double PreparationForALiter = 1.20;
+
+int NumberOfChemicalPackages = int.Parse(Console.ReadLine());
+int NumberOfMarkersPacks = int.Parse(Console.ReadLine());
+int LitersOfBoardCleaner = int.Parse(Console.ReadLine());
+int DiscountPercentage = int.Parse(Console.ReadLine());
+
+double price = (PackOfMarkers * NumberOfMarkersPacks) + (PackageOfChemicals * NumberOfChemicalPackages)
+                  + (PreparationForALiter * LitersOfBoardCleaner);
+double totalPrice = price - (price * 0.25);
+Console.WriteLine(totalPrice);
