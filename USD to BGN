@@ -1,0 +1,4 @@
+double usd = double.Parse(Console.ReadLine());
+double lev = 1.79549;
+double money = usd * lev;
+Console.WriteLine(money);
