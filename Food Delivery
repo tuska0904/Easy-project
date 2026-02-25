@@ -1,0 +1,12 @@
+double ChickenMenu = 10.35;
+double FishMenu = 12.40;
+double VegetarianMenu = 8.15;
+
+int NumberOfChickenMeals = int.Parse(Console.ReadLine());
+int NumberOfFishDishes = int.Parse(Console.ReadLine());;
+int NumberOfVegetarianMeals = int.Parse(Console.ReadLine());
+
+double amount = (NumberOfChickenMeals * ChickenMenu) + (NumberOfFishDishes * FishMenu) + (NumberOfVegetarianMeals * VegetarianMenu);
+double desert = amount * 0.20;
+double totalAmount = amount + desert + 2.50;
+Console.WriteLine(totalAmount);
