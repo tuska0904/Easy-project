@@ -1,0 +1,17 @@
+double ProtectiveNylonPerSquareMeter = 1.50;
+double PaintForALitre = 14.50;
+double PaintThinnerForALiter = 5.00;
+
+int RequiredAmountOfNylonRequired = int.Parse(Console.ReadLine());
+int NecessaryAmountOfPaint = int.Parse(Console.ReadLine());
+int AmountOFPaintThinnerAmount = int.Parse(Console.ReadLine());
+int hour = int.Parse(Console.ReadLine());
+
+double totalNylon = (RequiredAmountOfNylonRequired + 2) * ProtectiveNylonPerSquareMeter;
+double totalPaint = (NecessaryAmountOfPaint * 1.10) * PaintForALitre;
+double totalPaintThinner = AmountOFPaintThinnerAmount * PaintThinnerForALiter;
+double totalMaterials = totalNylon + totalPaint + totalPaintThinner + 0.40;
+double amountForCraftsmen = (totalMaterials * 0.30) * hour;
+double totalSum = totalMaterials + amountForCraftsmen;
+
+Console.WriteLine(totalSum);
