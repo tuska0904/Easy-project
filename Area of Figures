@@ -1,0 +1,31 @@
+string typeOfGeometricFigure = Console.ReadLine();
+
+if (typeOfGeometricFigure == "square")
+{
+    double a = double.Parse(Console.ReadLine());
+    double squareFace = a * a;
+    Console.WriteLine(squareFace);
+}
+
+else if (typeOfGeometricFigure == "rectangle")
+{
+    double a = double.Parse(Console.ReadLine());
+    double b = double.Parse(Console.ReadLine());
+    double rectangleFace = a * b;
+    Console.WriteLine(rectangleFace);
+}
+
+else if (typeOfGeometricFigure == "circle")
+{
+    double radiusOfACircle = double.Parse(Console.ReadLine());
+    double circleFace = Math.PI * radiusOfACircle * radiusOfACircle;
+    Console.WriteLine(circleFace);
+}
+
+else if (typeOfGeometricFigure == "triangle")
+{
+    double a = double.Parse(Console.ReadLine());
+    double h = double.Parse(Console.ReadLine());
+    double triangleFace = (a * h) / 2;
+    Console.WriteLine(triangleFace);
+}
